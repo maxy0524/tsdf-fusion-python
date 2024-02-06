@@ -17,6 +17,12 @@ An older CUDA/C++ version can be found [here](https://github.com/andyzeng/tsdf-f
   pip install --user pycuda
   ```
 
+* ma update
+  - python3.7.9
+  - cuda 11.7
+  - used MSVC v140 -VS 2015 C++ 生成工具 (v14.00)
+    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\cl.exe
+
 ## Demo
 
 This demo fuses 1000 RGB-D images from the 7-scenes dataset into a 405 x 264 x 289 projective TSDF voxel volume with 2cm resolution at about 30 FPS in GPU mode (0.4 FPS in CPU mode), and outputs a 3D mesh `mesh.ply` which can be visualized with a 3D viewer like [Meshlab](http://www.meshlab.net/).
